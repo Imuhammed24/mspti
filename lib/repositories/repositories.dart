@@ -10,7 +10,7 @@ class UserRepositories{
 
     Future<bool> hasToken() async{
       var value = await storage.read(key: 'token');
-      if (value != 'null'){
+      if (value != null){
         return true;
       }else{
         return false;

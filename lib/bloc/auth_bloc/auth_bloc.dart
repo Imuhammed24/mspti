@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter_app/bloc/auth_bloc/auth.dart';
 import 'package:flutter_app/repositories/repositories.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -31,7 +30,5 @@ class AuthenticationBloc extends Bloc<AuthenticationEvent, AuthenticationState> 
       await userRepositories.deleteToken();
       yield AuthenticationUnauthenticated();
     }
-    // TODO: implement mapEventToState
-    throw UnimplementedError();
   }
 }
